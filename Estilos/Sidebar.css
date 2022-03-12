@@ -1,0 +1,33 @@
+.sidebar {
+    margin-top: 20px;
+    width: 25%;
+    min-height: 96%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: -1px 1px 5px #000;
+}
+
+.profesores-ausentes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.tabla-profesores-ausentes {
+    width: 100%;
+}
+
+tr {
+    border: 1px solid #000;
+}
+
+th {
+    width: 33.3%;
+    
+}
