@@ -1,18 +1,17 @@
 .contenedor-noticias {
-    width: 80%;
+    width: 75%;
+    height: 100%;
     display: flex;
+    overflow-y: scroll;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     margin-top: 20px;
 }
 
 .noticia {
-    margin-bottom: 2rem;
+    margin: 1rem 0;
     height: 8rem;
     width: 98%;
     display: flex;
-    overflow: hidden;
     border-radius: 5px;
     box-shadow: 2px 2px 5px #000;
     transition: all .3s ease-in-out;

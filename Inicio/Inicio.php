@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWI</title>
+    <title>Inicio | E.E.S.T. N°1</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,7 @@
         include("../Encabezado/Encabezado.php");
     ?>
     <main>
+
         <?php 
             require("./NoticiasDAO.php");
 
@@ -35,7 +36,7 @@
             while (($row = $result->fetch_array()) != null) { // Recorro los resultados
                 $startDate = date("Y-m-d", strtotime($row['fecInicio'])); // Fecha inicio - Noticia actual
                 $endDate = date("Y-m-d", strtotime($row['fecFin'])); // Fecha final - Noticia actual
-                if (($date >= $startDate) && ($date <= $endDate)) { // Comparo fecha actual, fecha inicio y fecha final
+                //if (($date >= $startDate) && ($date <= $endDate)) { // Comparo fecha actual, fecha inicio y fecha final
                     echo("
                     <div class=\"noticia\">
                         <div class=\"contenedor_img\">
@@ -48,7 +49,7 @@
                         </div>
                     </div>
                     ");
-                }
+                //}
             }
 
             echo("</div>");
@@ -56,8 +57,5 @@
             include("../Sidebar/Sidebar.php");
         ?>
     </main>
-    <?php
-        include("../Footer/Footer.php");
-    ?>
 </body>
 </html>

@@ -1,0 +1,40 @@
+.historia{
+    margin-top: 35px;
+    width: 74%;
+    height: 97%;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 1px 1px 5px#000;
+    background-color: rgb(240, 240, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.contenedor-historia {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-historia {
+    width: 400px;
+    margin: 15px;
+}
+
+.historia h2, .historia p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.historia h2 {
+    margin: 20px 0;
+}
+
+.historia p {
+    font-size: 1.2rem;
+}
+

@@ -34,10 +34,12 @@
 
             echo("
             <div class=\"contenedor-noticia\">
-                <h2 class=\"noticia-titulo\">" . $row['titulo'] . "</h2>
-                <img src=\"" . $row['urlImg'] . "\" class=\"noticia-img\">
-                <p class=\"noticia-descCorta\">" . $row['descCorta'] . "</p>
-                <p class=\"noticia-descLarga\">" . $row['descLarga'] . "</p>
+                <div class=\"noticia\">
+                    <h2 class=\"noticia-titulo\">" . $row['titulo'] . "</h2>
+                    <img src=\"" . $row['urlImg'] . "\" class=\"noticia-img\">
+                    <p class=\"noticia-descCorta\">" . $row['descCorta'] . "</p>
+                    <div class=\"noticia-descLarga\">" . $row['descLarga'] . "</div>
+                </div>
                 <button class=\"btn-regresar\" onclick=\"location.href='./Inicio.php'\">Regresar</button>
             </div>
             ");
