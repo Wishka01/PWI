@@ -11,23 +11,26 @@
             </tbody>
         </table>
         <div class="separador"></div>
-        <div class="scroll">
-            <table class="tabla-profesores-ausentes">
-                    <?php
-                        require("../Sidebar/AusenciaDocenteDAO.php");
-                        $ausenciaDocenteDAO = new AusenciaDocenteDAO();
-                        $result = $ausenciaDocenteDAO->selectAll();
-                        while (($row = $result->fetch_array()) != null) {
-                            echo("
-                                <tr>
-                                    <td>" . $row['profesor'] . "</td>
-                                    <td>" . $row['fecInicio'] . "</td>
-                                    <td>" . $row['fecFin'] . "</td>
-                                </tr>
-                            ");
-                        }
-                    ?>
-            </table>
+        <div class="contenedor-tabla">
+            <div class="scroll">
+                <table class="tabla-profesores-ausentes">
+                        <?php
+                            require("../Sidebar/AusenciaDocenteDAO.php");
+                            $ausenciaDocenteDAO = new AusenciaDocenteDAO();
+                            $result = $ausenciaDocenteDAO->selectAll();
+                            while (($row = $result->fetch_array()) != null) {
+
+                                echo("
+                                    <tr>
+                                        <td>" . $row['profesor'] . "</td>
+                                        <td>" . $row['fecInicio'] . "</td>
+                                        <td>" . $row['fecFin'] . "</td>
+                                    </tr>
+                                ");
+                            }
+                        ?>
+                </table>
+            </div>
          </div>
     </div>
     <div class="campus">

@@ -57,5 +57,8 @@
             include("../Sidebar/Sidebar.php");
         ?>
     </main>
+    <?php
+        include("../Footer/Footer.php");
+    ?>
 </body>
 </html>
