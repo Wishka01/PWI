@@ -36,7 +36,7 @@
             while (($row = $result->fetch_array()) != null) { // Recorro los resultados
                 $startDate = date("Y-m-d", strtotime($row['fecInicio'])); // Fecha inicio - Noticia actual
                 $endDate = date("Y-m-d", strtotime($row['fecFin'])); // Fecha final - Noticia actual
-                //if (($date >= $startDate) && ($date <= $endDate)) { // Comparo fecha actual, fecha inicio y fecha final
+                if (($date >= $startDate) && ($date <= $endDate)) { // Comparo fecha actual, fecha inicio y fecha final
                     echo("
                     <div class=\"noticia\">
                         <div class=\"contenedor_img\">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     ");
-                //}
+                }
             }
 
             echo("</div>");

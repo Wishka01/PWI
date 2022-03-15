@@ -28,9 +28,7 @@
 
             $noticiaDAO = new NoticiaDAO(); // Instancia del DAO
             $result = $noticiaDAO->selectById($idNoticia); // Resultado de la query
-
             $row = $result->fetch_array();
-
 
             echo("
             <div class=\"contenedor-noticia\">

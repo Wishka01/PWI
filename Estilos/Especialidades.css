@@ -1,0 +1,41 @@
+.contenedor-especialidades {
+    margin-top: 20px;
+    width: 75%;
+    height: 100%;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 1px 1px 5px#000;
+    background-color: rgb(240, 240, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.especialidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.especialidad h2, .especialidad h3 {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.especialidad p {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.especialidad img {
+    width: 70%;
+    height: 50%;
+    margin: 30px 0;
+}

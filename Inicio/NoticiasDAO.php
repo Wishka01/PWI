@@ -1,28 +1,19 @@
 <?php
     class NoticiaDAO {
-        private $host = "localhost";
-        private $user = "root";
-        private $password = "";
-        private $database = "pwi";
-        private $mysqli;
-
-        public function __construct() {
-            $this->mysqli = new mysqli($this->host, $this->user, $this->password, $this->database);
-            if ($this->mysqli->connect_errno) {
-                printf("Falló la conexión.");
-                exit();
-            }
-        }
 
         public function selectAll() {
+            include("../CLSSQL.php");
             $query = "SELECT * FROM Noticias;";
-            $result = $this->mysqli->query($query);
+            $result = $mysqli->query($query);
+            $mysqli->close();
             return $result;
         }
 
         public function selectById($idNoticia) {
+            include("../CLSSQL.php");
             $query = "SELECT * FROM Noticias WHERE idNoticia = " . $idNoticia . ";";
-            $result = $this->mysqli->query($query);
+            $result = $mysqli->query($query);
+            $mysqli->close();
             return $result;
         }
     }
