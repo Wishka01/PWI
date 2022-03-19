@@ -2,13 +2,25 @@
     margin-top: 20px;
     width: 75%;
     height: 100%;
-    border-radius: 5px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    box-shadow: 1px 1px 5px#000;
     background-color: rgb(240, 240, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
+}
+
+.directivo {
+    width: 200px;
+    height: 500px;
+    padding: 5px 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px#000;
+}
+
+.directivo h2, .directivo h4 {
+    text-align: center;
 }
